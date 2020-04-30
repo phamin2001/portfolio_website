@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:site_name" content="Amin Pahlavani Portfolio" />
+    <!-- Add Image URL -->
+    <!-- <meta property="og:image" content="" /> -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -14,19 +19,21 @@
       rel="stylesheet"
     /> -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
     <title>Amin Pahlavani | Web Developer</title>
   </head>
+
   <body>
+
     <!-- Header -->
     <header id="header-home">
       <!-- using utility class -->
       <div class="container">
         <nav id="main-nav">
-          <img src="img/logo.png" alt="My Portfolio" id="log" />
+          <img src="img/logo.png" alt="My Portfolio" id="logo" />
           <ul>
             <li><a href="index.html" class="current">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -34,7 +41,24 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
+        <div class="header-content">
+          <h1>
+            I Am Amin The
+            <span
+              class="txt-type"
+              data-wait="3000"
+              data-words='["Developer", "Creator", "Innovator"]'
+            ></span>
+          </h1>
+          <p class="lead">
+            I am a Web Developer meeting the user's need in a creative way
+          </p>
+          <a href="work.html" class="btn-light">View My Work</a>
+        </div>
       </div>
     </header>
+
+    <script src="js/typewriter.js"></script>
+
   </body>
 </html>
