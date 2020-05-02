@@ -100,6 +100,9 @@ img {
 
   // Header Inner
   &-inner {
+    background: $bg-image no-repeat 20% 30% / cover;
+    height: 5.5rem;
+    border-bottom: 3px solid $main-color;
   }
 }
 
@@ -182,7 +185,7 @@ img {
 
           .process-step {
             background: $dark-color;
-            color: set-text-color($dark-color);;
+            color: set-text-color($dark-color);
           }
         }
       }
@@ -202,6 +205,61 @@ img {
         padding: 1rem;
         transition: all 1s;
       }
+    }
+  }
+}
+
+// About Sections:
+#about {
+  &-a {
+    .about-info {
+      display: grid;
+      grid-template-areas:
+        'bioimage bio bio'
+        'education experience certificates';
+      grid-gap: 1.2rem;
+    }
+
+    // Grid Area
+    .bio-image {
+      grid-area: bioimage;
+    }
+
+    .bio {
+      grid-area: bio;
+      border-left: 3px solid $main-color;
+      padding: 0.8rem;
+    }
+
+    .education {
+      grid-area: education;
+    }
+
+    .experience {
+      grid-area: experience;
+    }
+
+    .certificates {
+      grid-area: certificates;
+    }
+
+    .education .fas,
+    .experience .fab,
+    .certificates .fas {
+      color: $main-color;
+      margin: 1rem;
+    }
+
+    .education h3,
+    .experience h3,
+    .certificates h3 {
+      margin-bottom: 0.4rem;;
+    }
+
+    .education ul,
+    .experience ul,
+    .certificates ul {
+      list-style: none;
     }
   }
 }
