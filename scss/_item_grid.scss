@@ -1,3 +1,8 @@
+// a {
+//   color: #fff;
+//   text-decoration: none;
+// }
+
 .items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -19,12 +24,13 @@
     left: 0;
     width: 100%;
     height: 100%;
+    // We want it off screen | and push it to the left
     transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
-    transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+    transition: transform 5s cubic-bezier(0.2, 1, 0.3, 1);
   }
 
-  // Briing in main color overlay
-  &:hover:after {
+  // Bring in main color overlay
+  &:hover::after {
     transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
   }
 
@@ -36,16 +42,21 @@
   // Bring in text on hover
   &:hover &-text {
     opacity: 1;
+    // By hover we want to bring it in
+    // Set translateY(0) because it's resting position
+    // for text
     transform: translateY(0);
   }
 
   &-image {
     height: auto;
-    transform: translateZ(0);
+    // Image is inline by default
     display: block;
+    transform: translateZ(0);
     transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
   }
 
+  // It take cares of image container
   &-image::before {
     content: '';
     display: block;
@@ -60,11 +71,6 @@
     width: 100%;
     height: auto;
     line-height: 0;
-  }
-
-  a {
-    color: #fff;
-    text-decoration: none;
   }
 
   &-text {
@@ -83,16 +89,21 @@
     transition-delay: 300ms;
   }
 
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
   &-text-wrap {
     position: absolute;
-    top: 50%;
     width: 100%;
+    top: 50%;
     transform: translateY(-50%);
   }
 
-  &-text-title {
+  &-text-tile {
     font-size: 2rem;
-    padding: 0rem 1rem;
+    padding: 0 1rem;
     margin: 5px 0 0 0;
   }
 
