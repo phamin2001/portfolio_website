@@ -302,7 +302,7 @@ img {
   &-d {
     .testimonials {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
       grid-gap: 0.5rem;
 
       a {
@@ -421,3 +421,6 @@ img {
     }
   }
 }
+
+// Import Media Queries
+@import 'media';
