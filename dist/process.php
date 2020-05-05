@@ -10,7 +10,7 @@
     $message = $_POST['message'];
     
     //send email
-    mail($admin_email, $subject, $name. 'wrote:' . $message . ' - ' . $phone, "From:" . $email);
+    mail($admin_email, $subject, $name. ' wrote: ' . $message . ' - ' . $phone, "From:" . $email);
     
     header('Location: https://aminph.co/success.html');
   }

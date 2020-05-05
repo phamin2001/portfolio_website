@@ -22,6 +22,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Contact Me | Web Developer</title>
   </head>
 
@@ -79,6 +80,12 @@
               name="message"
               placeholder="Enter Message"
             ></textarea>
+          </div>
+          <div class="my-2 py-1">
+            <div
+              class="g-recaptcha"
+              data-sitekey="6LeWAPMUAAAAADxDz8cQkTiO2w0QSqFpn8iZHtHu"
+            ></div>
           </div>
           <button type="submit" class="btn-dark">Submit</button>
         </form>
