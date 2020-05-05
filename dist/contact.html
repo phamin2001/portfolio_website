@@ -48,30 +48,35 @@
         <h2 class="section-title">Contact Me</h2>
         <div class="bottom-line"></div>
         <p class="lead">Here is how you can reach me</p>
-        <form>
+        <form action="process.php" method="POST">
           <div class="text-field">
             <input
               type="text"
               class="text-input name-input"
+              name="name"
               placeholder="Name"
             />
             <input
               type="text"
               class="text-input subject-input"
+              name="subject"
               placeholder="Subject"
             />
             <input
               type="email"
               class="text-input email-input"
+              name="email"
               placeholder="Email Address"
             />
             <input
               type="text"
               class="text-input phone-input"
+              name="phone"
               placeholder="Phone Number"
             />
             <textarea
               class="text-input message-input"
+              name="message"
               placeholder="Enter Message"
             ></textarea>
           </div>
