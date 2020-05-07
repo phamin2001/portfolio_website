@@ -333,7 +333,7 @@ img {
   list-style: none; }
 
 #about-b .progress {
-  overflow: scroll;
+  overflow: hidden;
   height: 20px;
   background: #ccc;
   border-radius: 5px;

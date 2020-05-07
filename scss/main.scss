@@ -269,7 +269,7 @@ img {
   &-b {
     .progress {
       // stay contained
-      overflow: scroll;
+      overflow: hidden;
       height: 20px;
       background: $medium-color;
       border-radius: 5px;
